@@ -1,0 +1,10 @@
+[solution]
+name = "KarnbirKhera"
+definition = "dsa_topk_indexer_fp8_h64_d128_topk2048_ps64"
+author = "KarnbirKhera"
+
+[build]
+language = "cuda"
+entry_point = "kernel.cu::launch_topk_c"
+binding = "torch"
+destination_passing_style = true
